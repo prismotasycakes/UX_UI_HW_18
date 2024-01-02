@@ -6,6 +6,7 @@ body{
     margin: 0;
 }
 
+/*navigation*/
 .inline-block{
     display: inline-block;
     vertical-align: top;
@@ -35,6 +36,50 @@ nav li {
    
 }
 
+/* about me section*/
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    
+}
+
+/* scrolling text Skills */
+.scrollingText{
+    background-color: rgb(221, 221, 221);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;  
+    
+}
+
+.skillsText{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    white-space: nowrap;
+    animation: animate_text 30s linear infinite;
+}
+
+.skillsText span {
+    margin: 0 40px;
+    display: inline-flex;
+}
+
+@keyframes animate_text {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
 #details{
     width: 400px;
     height: 100px;
@@ -50,12 +95,6 @@ nav li {
 
 }
 
-.content {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5%;
-    
-}
 
 footer {
     padding-top: 1%;
