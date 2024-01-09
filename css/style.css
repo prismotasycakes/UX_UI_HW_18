@@ -79,6 +79,35 @@ nav li {
     }
 }
 
+/*Projects Section*/
+
+.containers{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 550px;
+    grid-template-areas: "projectOne projectTwo projectThree";
+    
+    
+}
+
+.projectOne{
+    background-color: aquamarine; /*replace with image*/
+    grid-area: projectOne;
+    
+}
+
+.projectTwo{
+    background-color: blue; /*replace with image*/
+    grid-area: projectTwo;
+}
+
+.projectThree{
+    background-color: cadetblue; /*replace with image*/
+    grid-area: projectThree;
+}
+
 /*footer content*/
 #details{
     width: 400px;
@@ -122,4 +151,21 @@ footer ul {
 
 .footerRight{
     justify-content: flex-end;
+}
+
+/*Responsive Layout for Mobile*/
+@media only screen and (max-width: 900px){
+   
+    .containers{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        /* height: 550px; */
+        grid-template-areas: "projectOne projectTwo"
+            "projectThree projectThree"
+            " projectThree projectThree";
+        
+        
+    }
+    
 }
